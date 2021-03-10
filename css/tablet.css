@@ -1,0 +1,438 @@
+@charset "utf-8";
+
+/* ===== main start ===== */
+
+
+
+
+
+
+.main-bg-bar{
+	position: absolute;
+	width: 100%; height: 100%;
+	z-index: -1;
+	overflow: hidden;
+}
+.main-bg-slide{
+	position: absolute;  transform: translateX(0%);
+	width: 400%; height: 100%;
+	transition: all 0.4s ease-in;
+}
+.main-bg-slide .main-bg{
+	float: left;
+	width: 25%; height: 100%;
+}
+.main-bg:first-child{
+	left: 0;
+	background: url("../img/TABLET/main-num1-tablet.jpg") no-repeat center center;
+	background-size: cover;
+}
+.main-bg:nth-child(2){
+	left: 100%;
+	background: url("../img/TABLET/main-num2-tablet.jpg") no-repeat center center;
+	background-size: cover;
+}
+.main-bg:nth-child(3){
+	left: 200%;
+	background: url("../img/TABLET/main-num3-tablet.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.main-bg:last-child{
+	left: 300%;
+	background: url("../img/TABLET/main-num4-tablet.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+div.main-bg > div{
+	position: relative; width: 100%; height: 100%;
+}
+
+div.main-bg > div > h3{
+	position: absolute; left: 50%; top: 40%; transform: translate(-50%, -50%); width: 100%;
+	color: #f2f2f2;	font-size: 60px; font-weight: 100;
+	text-align: center; line-height: 96px;
+}
+
+div.main-bg > div > h3 > span{font-weight: 700;}
+
+.main-bg-slide-btn{
+	position: absolute; left: 50%; bottom: 10%; transform: translateX(-50%);
+	width: 100%;
+}
+
+.main-bg-slide-btn ul{display: flex; justify-content: space-between;}
+.main-bg-slide-btn ul li{width: 250px; height: 65px; background: #333;}
+.main-bg-slide-btn a{
+	width: 100%; height: 100%;
+	font-size: 20px; font-weight: 300; text-align: center; line-height: 65px
+}
+.main-bg-slide-btn ul li a.focus{font-weight: 700;}
+.main-bg-slide-btn ul li{background-blend-mode: multiply;}
+.main-bg-slide-btn .slide1{
+	background: rgba(0, 0, 0, 0.6) url("../img/TABLET/button/slide-btn1.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.main-bg-slide-btn .slide2{
+	background: rgba(0, 0, 0, 0.6) url("../img/TABLET/button/slide-btn2.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.main-bg-slide-btn .slide3{
+	background: rgba(0, 0, 0, 0.6) url("../img/TABLET/button/slide-btn3.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.main-bg-slide-btn .slide4{
+	background: rgba(0, 0, 0, 0.6) url("../img/TABLET/button/slide-btn4.jpg") no-repeat center center;
+	background-size: cover;
+}
+aside{display: none;}
+
+
+
+
+
+/* ===== fine-dust start ===== */
+
+
+
+
+
+.fd{
+	background: url("../img/TABLET/fine-dust/banner.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+article{
+	display: block; margin: 0 auto;
+	width: 100%; transition: img 0.4s ease-in; padding: 0 30px;
+}
+
+article h3{font-size: 30px; font-weight: 700; color: #4f865f;}
+article p{margin-top: 20px; font-size: 16px; font-weight: 300;}
+
+.fd-cause-right, .fd-car-left, .fd-factory-right{width: 50%; height: 500px;}
+.fd-cause-left, .fd-car-right, .fd-factory-left{width: 46%; height: 500px; padding-top: 30px;}
+article > div.fd-cause-left{float: left;}
+article > div.fd-cause-right{float: right; background: url("../img/TABLET/fine-dust/img1.jpg") no-repeat center center; background-size: cover; display: none;}
+article > div.fd-car-left{float: left; background: url("../img/TABLET/fine-dust/img2.jpg") no-repeat center center; background-size: cover; display: none;}
+article > div.fd-car-right{float: right;}
+article > div.fd-factory-left{float: left;}
+article > div.fd-factory-right{float: right; background: url("../img/TABLET/fine-dust/img3.jpg") no-repeat center center; background-size: cover; display: none;}
+.fd-mid-banner{
+	margin: 100px 0; width: 100%; height: 300px;
+	background: url("../img/FHD/fine-dust/full1.jpg") no-repeat center center;
+	background-attachment: fixed;
+}
+
+.fd-symptom{
+	position: relative; margin-top: 100px;
+	width: 100%;
+	background: #6f7474; overflow: hidden; z-index: 1;
+}
+.fd-symptom h3, .fd-symptom p, .fd-symptom > div > div{position: relative; z-index: 9;}
+
+.fd-symptom > div{position: relative; width: 94%;height: 100%; margin: 0 auto;}
+.fd-symptom > div > h3{margin-top: 80px; font-size: 40px; font-weight: 700;  color: #FFF;}
+.fd-symptom > div > p{margin-top: 40px; color: #FFF;}
+
+
+
+.fd-symptom> div > div > h4{margin: 40px 0; font-size: 30px; color: #FFF;}
+.fd-symptom > div > div > p{margin-bottom: 80px; color: #FFF;}
+.fd-symptom > div > img{
+	position: absolute; float: right; right: 0; top: 0; width: 700px; height: 700px; 
+}
+
+
+
+
+
+/* ===== fine-dust end ===== */
+
+
+/* ====== Necessity : start ====== */
+/*베너 배경 이미지*/
+.nc {
+    background: url("../img/FHD/banner/nc-fhd.jpg") no-repeat center center; 
+    background-size: cover;
+}
+
+
+/*공기청정기 배경 이미지*/
+.nc-air-bg {margin: 80px 0 70px 0;
+    background: url("../img/sub-btn.jpg") no-repeat; background-size: cover; overflow: hidden;}
+.nc-air-bg h3 { margin: 0 auto; padding-top: 30px; font-size: 40px; color: #4f865f; text-align: center; transition:all 0.3s ease-in ; }
+.nc-air-bg p {width: 60%; margin: 30px auto; padding: 15px; text-align: center;
+    font-size: 16px; color: #F4F4F4; line-height:30px;  border-radius:5px;
+    background:rgba(0,0,0,0.3); transition:all 0.4s ease-in 0.1s; }
+/*공기청정기 제품 버튼*/
+.nc-air-bg a { width: 20%; margin: 30px auto;
+    font-size: 14px; color: #fff; line-height:45px;
+    border-radius:60px; border: 1px solid #f4f4f4; text-align: center;
+    transition:all 0.5s ease-in 0.2s; cursor: pointer; }
+
+
+
+/*공기청정기 필요성과 효과*/
+
+/*필요성*/
+.nc-necessity { float:left; width:48%; height:300px; margin:30px 0 80px; border-radius: 15px;
+    background: url("../img/necessity.jpg") no-repeat; overflow:hidden; }
+.nc-necessity-right { float:right; width:250px; height:300px;
+    background: url("../img/necessity-right.jpg") no-repeat center center; }
+.nc-necessity-bottom { height:230px; margin-top:70px; padding:10px 10px; 
+    background: url("../img/necessity-bottom.jpg"); transition:all 0.4s ease-in;}
+.nc-necessity-bottom h4{margin: 15px auto; padding-bottom: 5px;
+    font-size: 25px; text-align: center; color: #fff; border-bottom: 3px solid #4f865f;}
+.nc-necessity-bottom p{ font-size: 14px; text-align: center; color: #fff;  line-height: 25px; }
+.nc-necessity-bottom a{ margin:10px 20px 0; padding: 10px 5px; border: 1px solid #fff; border-radius: 30px;  
+    font-size: 16px; text-align: center; color: #fff; }
+
+/*효과*/
+.nc-effect { position: relative; float:right; width:48%; height:300px; margin:30px 0 80px; border-radius: 15px;
+    background: url("../img/effect.jpg") no-repeat; overflow:hidden; }
+.nc-effect-right { float:right; width:250px; height:300px;
+    background: url("../img/effect-right.jpg") no-repeat center center; }
+.nc-effect-bottom { height:230px; margin-top:70px; padding:10px 10px;
+    background: url("../img/effect-bottom.jpg"); transition:all 0.4s ease-in; }
+.nc-effect-bottom h4{ margin: 15px auto; padding-bottom: 5px;
+    font-size: 25px; text-align: center; color: #fff; border-bottom: 3px solid #4f865f;}
+.nc-effect-bottom p{ font-size: 14px; text-align: center; color: #fff;  line-height: 25px; }
+.nc-effect-bottom a{margin:10px 20px 0; padding: 10px 5px; border: 1px solid #fff; border-radius: 30px;
+    font-size: 16px; text-align: center; color: #fff; }
+
+/* 라이트 박스 */
+.necessity-detail {display: none; position:fixed; left:0; top:0; width:100%; height:100%; color: #000;
+    background:rgba(0,0,0,0.4); }
+.necessity-popup { position:absolute; left:50%; top:50%; width:500px; height:500px; margin:-250px 0 0 -250px;
+    background:#FFF; }
+.necessity-popup i{float: right; font-size: 40px; margin: 10px 10px 0 0; cursor: pointer;}
+.necessity-popup h4{float: left; text-align: center; font-size: 30px; padding:10px 0 10px 20px;}
+.necessity-popup-bg{width: 90%; height: 40%; margin: 60px 5% 0 5%; background: url("../img/necessity-popup.jpg")}
+.necessity-popup p{ text-align: center; font-size: 16px; padding: 15px 20px 0 20px;}
+
+.effect-detail { display: none; position:fixed; left:0; top:0; width:100%; height:100%;
+    background:rgba(0,0,0,0.4);}
+.effect-popup { position:absolute; left:50%; top:50%; width:500px; height:500px; margin:-250px 0 0 -250px;
+    background:#FFF; }
+.effect-popup i{float: right; font-size: 40px; margin: 10px 10px 0 0; cursor: pointer;}
+.effect-popup h4{float: left; text-align: center; font-size: 30px; padding:10px 0 10px 20px;}
+.effect-popup-bg{width: 90%; height: 40%; margin: 60px 5% 0 5%; background: url("../img/effect-popup.jpg")}
+.effect-popup p{ text-align: center; font-size: 16px; padding:15px 20px 0 20px;}
+
+
+
+
+/* ====== Necessity : end ====== */
+
+
+/* ===== pick start ===== */
+
+
+
+.pick{
+    background: url("../img/FHD/banner/pick-fhd.jpg") no-repeat center center;
+    background-size:cover;
+}
+
+h3 strong {color: #4bcffa;}
+h3 strong + strong {color: #4f865f;}
+
+.box-wrap{width: 50%; padding: 0 30px;}
+.product-box {position: relative;width: 100%; height: 300px;background: #f4f4f4 no-repeat; border-radius: 10px;overflow: hidden;}
+.product-wrap-hot > .box-wrap {
+    margin-bottom: 80px;
+}
+.box-wrap:nth-child(3) , .box-wrap:nth-child(4) {
+    display: none;
+}
+.product-wrap-choice .bg {
+    background: url("../img/product1.jpg") no-repeat left center;
+    height: 300px;
+    background-size: 50% 100%;
+}
+.product-wrap-ppr .bg {
+    background: #f4f4f4 url("../img/product2.jpg") no-repeat left center;
+    height: 300px;
+    background-size: 50% 100%;
+}
+.product-wrap-hot .bg {
+    position: relative;
+    background: #f4f4f4 url("../img/product3.jpg") no-repeat left center;
+    height: 300px;
+    background-size: 50% 100%;   
+}
+.product-wrap-choice h4, .product-wrap-ppr h4, .product-wrap-hot h4 {    
+    position: absolute;
+    left: 55%; top: 15%;
+    font-size: 18px;
+    color: #333;
+}
+.hash {
+    position: absolute;
+    left: 55%; top: 45%;
+    font-size: 16px;
+}
+.shipping{
+    position: absolute;
+    left: 55%; top: 55%;
+    font-size: 16px;
+}
+.shipping i {
+    font-size: 16px;
+    color: #333;
+}
+.sale {
+    position: absolute;
+    right: 5%; bottom: 20%;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: line-through;
+    
+}
+.price{
+    position: absolute;
+    right: 5%; bottom: 10%;
+    font-weight: 400;
+    font-size: 22px;
+    color: #2599e2; 
+} 
+.star {
+    position: absolute; 
+    left: 2%; top:3.5%;
+    width: 44px; height: 44px;
+    background: url("../img/pick-sale.png");
+}
+.per {
+    position: absolute;
+    left: 6%;  top: 8%;
+    width: 60px; height: 60px;
+    background: #ffdd1e;
+    color: #c92626;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+}
+.product-wrap li:hover{
+    transform: scale(1.05);
+}
+.mid-img {
+    margin-top: 80px;
+    width: 100%;
+    height: 350px;
+    line-height: 350px;
+    background: url("../img/FHD-mid-img.jpg") no-repeat;
+    transition: all 0.6s ease-in-out;
+}
+
+.product-box:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-in;
+    border: #4bcffa 2px solid;
+}
+
+
+
+
+
+/* ===== pick end ===== */
+
+/* ===== review start ===== */
+
+
+
+
+
+.review{
+	background: url("../img/FHD/banner/rv-fhd.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+section .title h3 {
+	margin-top: 100px;
+	text-align: center;
+	color: #4f865f;
+	font-size:40px;
+}
+
+/*=========검색 결과===========*/
+
+section .rv-rt {
+	margin: 0 auto; margin-top: 50px; width: 100%; height:60px;
+	font-size: 16px; line-height: 60px;
+	border: 1px solid #dddddd; border-left: 0; border-right: 0;
+}	
+section .rv-rt a {display: inline-block; color: #DDDDDD;}
+section .rv-rt p {margin-top: 0; float: left; }
+section .rv-rt span {color:#5dc3e4; font-size:16px;}
+
+section .rv-rtmenu { 
+	float: right;margin-top: 20px;
+	border: 0; cursor: pointer;
+	font-family: 'Noto Sans KR', sans-serif; 
+}
+
+/*==============검색 바 ===============*/
+
+section .rv-sc {width: 500px; height: 40px; margin: 0 auto; margin-top: 50px; }
+
+section .rv-scmenu {
+	width: 14%; height: 30px;
+	border: 2px solid #DDDDDD; border-radius: 8px;
+	font-family: 'Noto Sans KR', sans-serif; margin-top: 20px;
+}
+section .rv-scbar { 
+	width:70%; height:40px; 
+	border: 2px solid #DDDDDD; border-radius: 8px;
+}
+section .rv-scbtn { 
+	width: 14%; height: 30px; margin-top: 20px;
+	border: 2px solid #DDDDDD; border-radius:8px; cursor: pointer;
+}
+
+/*================체크박스 선택==================*/
+
+section .rv-cb { 
+	margin: 0 auto; margin-top: 50px; margin-bottom: 50px;
+	border: 1px solid #000; border-radius: 5px; 
+	width: 600px; height: 140px;
+}
+section .rv-cb .rv-cbtp {  width: 37%; height: 125px; padding: 20px  0 0 30px; }
+
+section .rv-cb .rv-cbtp input { margin: 0 10px;}
+section .rv-cb .rv-cbbd{  width: 53%; height: 125px; padding: 20px 0 0 30px; }
+
+section .rv-cb .rv-cbbd input { margin: 0 10px;}
+section .rv-cb .rv-cbbtn{ 
+	float: right; width: 9%; height: 30px; margin-top: -35px; margin-right: 20px; 
+	border: 1px solid #DDDDDD; border-radius: 5px;
+	font-family: 'Noto Sans KR', sans-serif; cursor: pointer; 
+}
+section .rv-write { float: right; margin: 40px 50px 40px 0; padding: 2px 10px; border: 1px solid #DDDDDD; border-radius: 5px;
+	font-family: 'Noto Sans KR', sans-serif; cursor: pointer; }
+
+/*================= 후기 ===================*/
+
+.rv-menu, .rv-rv{display: flex; height: 70px; justify-content: space-between;}
+.rv-menu li, .rv-rv li{display: block; text-align: center; line-height: 70px; overflow: hidden;}
+.rv-menu{background: #EBEBEB; border-top: 1px solid #000; border-bottom: 1px solid #C9C9C9;}
+.rv-rv{border-bottom: 1px solid #C9C9C9; transition: margin 0.5s ease-in;}
+section .rv-rv:nth-child(2n){ margin-left: 600px;}
+section .rv-rv:nth-child(2n+1){ margin-right: 600px;}
+
+.rv-menu li, .rv-rv li, .rv-rv li a{text-align: center;}
+.rv-menu li:nth-child(1), .rv-rv li:nth-child(1), .rv-menu li:nth-child(5), .rv-rv li:nth-child(5){flex-basis: 20%;}
+.rv-menu li:nth-child(2), .rv-rv li:nth-child(2), .rv-menu li:nth-child(4), .rv-rv li:nth-child(4){flex-basis: 10%;}
+.rv-menu li:nth-child(3), .rv-rv li:nth-child(3){flex-grow: 1;}
+
+
+section .rv-rv:hover { 
+	border: 2px solid #4f865f; border-radius: 5px; opacity: 0.7;
+}section .rv-rv li a {color: #000;}
+
+/* ===== review end ===== */

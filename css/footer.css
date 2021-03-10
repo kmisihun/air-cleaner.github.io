@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/* FHD */
+@media (min-width:1401px){
+    .main > footer{
+        position: absolute; bottom: 2%;
+        background: none; color: #FFF; opacity: 0.6;
+        width: 100%; height: 30px;
+    }
+    .main > footer > p{text-align: center;font-weight: 200;}
+    
+    footer{height: 150px; background: #4f865f;}
+    #ft-value{
+        display: flex; justify-content: space-between; align-items: center; margin: 0 auto; padding: 30px 50px;
+        width: 1400px; height: 150px;
+    }
+    .ft-logo{
+        margin-top: 5px;
+        font-family: 'Black Han Sans', sans-serif; letter-spacing: 3px; font-size: 38px; color: #FFF;
+    }
+    #ft-value > p{margin: 0; color: #FFF; font-size: 13px; font-weight: 400;}
+    #ft-value > .ft-logo + p + p{margin-top: 12px;}
+    .ft-btn ul li a i{margin-left: 15px; color: #FFF; font-size: 35px;}
+    .ft-btn ul li:last-child a i{margin-left: 30px;}
+}
+
+/* HD */
+@media (min-width:1001px) and (max-width:1400px){
+    .main > footer{
+        position: absolute; bottom: 2%;
+        background: none; color: #FFF; opacity: 0.6;
+        width: 100%; height: 30px;
+    }
+    .main > footer > p{text-align: center;font-weight: 200;}
+    
+    footer{background: #4f865f;}
+    #ft-value{
+        display: flex; justify-content: space-between; align-items: center; margin: 0 auto; 
+        width: 940px; height: 150px;
+    }
+    .ft-logo{
+        font-family: 'Black Han Sans', sans-serif; letter-spacing: 3px; font-size: 38px; color: #FFF;
+    }
+    #ft-value > p{margin: 0; color: #FFF; font-size: 13px; font-weight: 400;}
+    #ft-value > .ft-logo + p + p{margin-top: 12px;}
+    .ft-btn ul li a i{margin-left: 15px; color: #FFF; font-size: 35px;}
+    .ft-btn ul li:last-child a i{margin-left: 30px;}
+}
+
+/* TABLET */
+@media (min-width:661px) and (max-width:1000px){
+    .main > footer{
+        position: absolute; bottom: 2%;
+        background: none; color: #FFF; opacity: 0.6;
+        width: 100%; height: 30px;
+    }
+    .main > footer > p{text-align: center;font-weight: 200;}
+    
+    footer{width: 100%; background: #4f865f; padding: 50px 30px;}
+    
+    .ft-logo{
+        font-family: 'Black Han Sans', sans-serif; letter-spacing: 3px; font-size: 38px; color: #FFF; text-align: center;
+    }
+    #ft-value > p{margin-top: 40px; color: #FFF; font-size: 13px; font-weight: 400; text-align: center;}
+    .ft-btn{margin-top: 40px; padding-bottom: 30px; margin-left: 50%; transform: translateX(-130px);}
+    .ft-btn ul li a i{margin: 0 15px; color: #FFF; font-size: 35px;}
+    
+}
+
+/* PHONE */
+@media (max-width:660px){
+    .main > footer{
+        position: absolute; bottom: 2%;
+        background: none; color: #FFF; opacity: 0.6;
+        width: 100%; height: 30px;
+    }
+    .main > footer > p{text-align: center;font-weight: 200;}
+    
+    footer{width: 100%; background: #4f865f;}
+    #ft-value{margin: 0 auto; padding: 30px 20px; height: 300px;}
+    .ft-logo{
+        font-family: 'Black Han Sans', sans-serif; letter-spacing: 3px; font-size: 38px; color: #FFF; text-align: center;
+    }
+    #ft-value > p{margin-top: 30px; color: #FFF; font-size: 13px; font-weight: 400; text-align: center;}
+    .ft-btn{position: absolute; margin-top: 30px; left: 50%; transform: translateX(-50%);}
+    .ft-btn ul li a i{color: #FFF; font-size: 25px;}
+    .ft-btn ul li{margin-left: 10px;}
+}
+
+
+
+
+
+
+
+
+
+

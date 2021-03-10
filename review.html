@@ -1,0 +1,189 @@
+<!doctype html>
+<!--  
+header nav div없애
+article를 사용할지 안할지 정하기
+검색창 form태그 사용하여 콤보박스 텍스트입력창 생성
+체크박스 form태그 사용하여 제작 ul li로 유형 브랜드 작성
+리뷰 ul li 사용하여 다시 작성
+글쓰기 아이콘 삭제 버튼 생성
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>무제 문서</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/desktop-fhd.css" media="screen and (min-width : 1401px)">
+    <link rel="stylesheet" href="css/desktop-hd.css" media="screen and (min-width : 1001px) and (max-width : 1400px)">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width : 661px) and (max-width : 1000px)">
+    <link rel="stylesheet" href="css/phone.css" media="screen and (max-width : 660px)">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+	
+    <header>
+		<nav>
+			<a href="main.html"><div class="logo"></div></a>
+			<div class="trigger"></div>
+			<div class="menu">
+				<ul class="main-menu">
+					<li><a href="finedust.html">미세먼지란</a></li>
+					<li><a href="necessity.html">필요성</a></li>
+					<li><a href="pick.html">추천</a></li>
+					<li><a href="review.html">후기</a></li>
+				</ul>
+				<ul class="top-menu">
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Join</a></li>
+				</ul>
+				<ul class="sns-btn">
+					<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+				</ul>	
+			</div>
+		</nav>
+		
+	</header>
+	<section>
+		<div class="review banner"><h2>Reviews</h2></div>
+		<article>
+			<div class="ct"><h3>사용자 후기</h3></div>
+			<div class="rv-rt">
+				<p>상세검색 | 검색결과 : <span>9</span> 개</p>
+				<form name="f-rv-rtmenu" action="" method="post">
+					<select class="rv-rtmenu">
+						<option value="1">최신순</option>
+						<option value="2">별점순</option>
+					</select>
+				</form>
+			</div>
+
+			<form name="f-rv-ch-menu" action="" method="post">
+				<div class="rv-sc">
+					<select name="rv-ch-menu" class="rv-scmenu">
+						<option value="1">제목</option>
+						<option value="2">작성자</option>
+						<option value="3">제목+작성자</option>
+					</select>
+					<input type="text" size="50" value="" class="rv-scbar">
+					<button type="submit" class="rv-scbtn"><i class="fa fa-search"></i></button> 
+				</div>
+			</form>
+
+			<ul class="rv-cb">
+				<form name="f-rv-cb" action="" method="post">
+					<li class="rv-cbtp">
+						<p>유형</p>
+							 <input type="checkbox" value="1" id="rv-cbtp-air">공기청정기
+							 <input type="checkbox" value="2">필터
+					</li>
+					<li class="rv-cbbd">
+							 <p>브랜드</p>
+						<input type="checkbox" value="3" id="rv-cbbd-samsung">삼성
+						<input type="checkbox" value="4">LG
+						<input type="checkbox" value="5">샤오미
+						<input type="checkbox" value="6">위닉스
+					</li>
+					<button type="submit" class="rv-cbbtn">상세검색</button> 
+				</form>
+			</ul>
+			
+			<ul class="rv-menu">
+				<li>유형</li>
+				<li>별점</li>
+				<li>내용</li>
+				<li>작성자</li>
+				<li>작성일</li>
+			</ul>
+			<ul class="rv-rv">
+				<li>공기청정기</li>
+				<li>별점</li>
+				<li><a href="#">참 좋아요</a></li>
+				<li>김문일</li>
+				<li>2020-07-29</li>
+			</ul>
+			<ul class="rv-rv">
+				<li>필터</li>
+				<li>별점</li>
+				<li><a href="#">너무 좋아요</a></li>
+				<li>김문일</li>
+				<li>2020-07-30</li>
+			</ul>
+			<ul class="rv-rv">
+				<li>필터</li>
+				<li>별점</li>
+				<li><a href="#">너무 좋아요</a></li>
+				<li>김문일</li>
+				<li>2020-07-30</li>
+			</ul>
+			<ul class="rv-rv">
+				<li>필터</li>
+				<li>별점</li>
+				<li><a href="#">너무 좋아요</a></li>
+				<li>김문일</li>
+				<li>2020-07-30</li>
+			</ul>
+			<ul class="rv-rv">
+				<li>필터</li>
+				<li>별점</li>
+				<li><a href="#">너무 좋아요</a></li>
+				<li>김문일</li>
+				<li>2020-07-30</li>
+			</ul>
+			<ul class="rv-rv">
+				<li>필터</li>
+				<li>별점</li>
+				<li><a href="#">너무 좋아요</a></li>
+				<li>김문일</li>
+				<li>2020-07-30</li>
+			</ul>
+			<ul class="rv-rv">
+				<li>필터</li>
+				<li>별점</li>
+				<li><a href="#">너무 좋아요</a></li>
+				<li>김문일</li>
+				<li>2020-07-30</li>
+			</ul>
+			<ul class="rv-rv">
+				<li>필터</li>
+				<li>별점</li>
+				<li><a href="#">너무 좋아요</a></li>
+				<li>김문일</li>
+				<li>2020-07-30</li>
+			</ul>
+			<ul class="rv-rv">
+				<li>필터</li>
+				<li>별점</li>
+				<li><a href="#">너무 좋아요</a></li>
+				<li>김문일</li>
+				<li>2020-07-30</li>
+			</ul>
+			<button type="submit" class="rv-write">글쓰기</button> 
+			<div class="clear"></div>
+		</article>
+	</section>
+	
+	<footer>
+		<div id="ft-value">
+			<h2 class="ft-logo">COVA</h2>
+			<p>(주)한국경영원 대표이사 김보현 사업자등록번호 409-81-33798<br>
+			통신판매업신고 광주북구 2008-00134 호 대표전화 1588-9868 팩스번호 1588-9838<br>
+			copyright BIZSEE All rights reserved.</p>
+			<div class="ft-btn">
+				<ul>
+					<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+					<li><a href="#"><i class="fa fa-arrow-circle-up"></i></a></li>
+				</ul>
+			</div>
+		</div>
+    </footer>
+</body>
+</html>
